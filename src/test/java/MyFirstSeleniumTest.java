@@ -12,6 +12,8 @@ import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
+import pages.firstPageObject.GoogleResultPage;
+import pages.firstPageObject.GoogleSearchPage;
 
 import java.util.concurrent.TimeUnit;
 
@@ -29,7 +31,8 @@ public class MyFirstSeleniumTest {
     @Test(priority = 1)
     public void myFirstTest() {
 
-        driver.get("https://google.com.ua/");
+
+        driver.get(GoogleSearchPage.GOOGLE_LINK);
 
         WebElement searchField = driver.findElement(By.name("q"));
         searchField.sendKeys("automationpractice");
@@ -40,6 +43,19 @@ public class MyFirstSeleniumTest {
 
 
         Assert.assertEquals(URL_AUTOPRACTICE, driver.getCurrentUrl());
+    }
+
+    @Test(priority = 1)
+    public void mySecondTest() {
+        driver.get(GoogleSearchPage.GOOGLE_LINK);
+
+        GoogleSearchPage searchPage = new GoogleSearchPage(driver);
+        searchPage.open();
+        searchPage.search();
+
+
+        GoogleResultPage resultPage = new GoogleResultPage(driver);
+        resultPage.openUrlByName();
     }
 
     @AfterClass
