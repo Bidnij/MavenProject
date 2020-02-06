@@ -25,7 +25,7 @@ public class BaseTest {
         driver.manage().window().maximize();
         Waiters.implicitWait(driver, Waiters.TIME_TEN, TimeUnit.SECONDS);
     }
-
+    //работа с Suite
     @AfterSuite
     public static void tearDown() {
         driver.close();
