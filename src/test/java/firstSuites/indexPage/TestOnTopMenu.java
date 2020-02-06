@@ -19,4 +19,5 @@ public class TestOnTopMenu extends BaseTest {
         Assert.assertEquals(getDriver().getCurrentUrl(), Links.BASIC_URL + Links.URL_CATEGORY_WOMEN_PAGE);
     }
 
+
 }
