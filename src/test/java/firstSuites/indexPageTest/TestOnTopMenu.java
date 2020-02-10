@@ -22,18 +22,7 @@ public class TestOnTopMenu extends BaseTest {
         topMenu.menuWomenClick();
         Assert.assertEquals(getDriver().getCurrentUrl(), Links.BASIC_URL + Links.URL_CATEGORY_WOMEN_PAGE);
     }
-    @Test
-    public void CheckSelectAreaTopMenuWomanPage () {
-        getDriver().get(Links.BASIC_URL + Links.URL_CATEGORY_WOMEN_PAGE);
-        BasePage basePage = new BasePage(getDriver());
-        basePage.openPage(Links.URL_CATEGORY_WOMEN_PAGE);
-        TopMenu topMenu = new TopMenu(getDriver());
-        topMenu.menuWomenClick();
-        TopMenuWomen topMenuWomen =  new TopMenuWomen(getDriver());
-        String isDisebled =  topMenuWomen.getCheckStyleTopMenuWomen();
-        //String none = "none";
-        Assert.assertEquals(isDisebled, null);
-    }
+
 
 
 }
