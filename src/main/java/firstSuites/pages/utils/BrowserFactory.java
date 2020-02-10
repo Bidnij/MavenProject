@@ -12,7 +12,7 @@ public class BrowserFactory {
     public static final WebDriver DEFAULT_CHROME = new ChromeDriver();
 
     public static WebDriver getDriver (String nameDriver) {
-        WebDriver driver = null;
+        //WebDriver driver = null;
 
         switch (nameDriver) {
             case "FIREFOX": return new FirefoxDriver();

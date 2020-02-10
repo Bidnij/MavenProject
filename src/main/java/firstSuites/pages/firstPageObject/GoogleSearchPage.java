@@ -1,5 +1,6 @@
 package firstSuites.pages.firstPageObject;
 
+import firstSuites.pages.BasePage;
 import firstSuites.pages.utils.Links;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;

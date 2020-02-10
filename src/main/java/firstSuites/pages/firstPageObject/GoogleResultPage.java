@@ -1,12 +1,11 @@
 package firstSuites.pages.firstPageObject;
 
+import firstSuites.pages.BasePage;
 import firstSuites.pages.utils.Links;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import firstSuites.pages.utils.Waiters;
-
-import java.util.concurrent.TimeUnit;
 
 
 public class GoogleResultPage extends BasePage {

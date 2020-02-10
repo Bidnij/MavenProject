@@ -22,11 +22,7 @@ public class MyFirstSeleniumTest  extends BaseTest {
     //private WebDriver driver;
 
 
-//    @BeforeClass
-//    public void startDriver() {
-//        driver = new ChromeDriver();
-//
-//    }
+
 
     @Test(priority = 1)  // тест без разнесенной логики
     public void myFirstTest() {
@@ -61,10 +57,7 @@ public class MyFirstSeleniumTest  extends BaseTest {
 
 
 
-//    @AfterClass
-//    public void quitDrive() {
-//        driver.close();
-//    }
+
 
 
 }

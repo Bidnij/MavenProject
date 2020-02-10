@@ -1,12 +1,12 @@
 package firstSuites.pages.indexPage;
 
-import firstSuites.pages.firstPageObject.BasePage;
+import firstSuites.pages.BasePage;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
 public class TopMenu extends BasePage {
-    protected WebDriver driver;
+
 
     public TopMenu(WebDriver driver) {
         super(driver);

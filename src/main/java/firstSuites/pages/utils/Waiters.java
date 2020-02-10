@@ -18,6 +18,6 @@ public class Waiters {
 
     public static void waitForUrl (WebDriver driver, int maxTimeSeconds, String url) {
         WebDriverWait wait = new WebDriverWait(driver, maxTimeSeconds);
-        wait.until(ExpectedConditions.urlToBe(url)); //Ожиидаю пока появится линка
+        wait.until(ExpectedConditions.urlToBe(url));
     }
 }

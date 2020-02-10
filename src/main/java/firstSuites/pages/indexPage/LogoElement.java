@@ -1,19 +1,13 @@
 package firstSuites.pages.indexPage;
 
-import firstSuites.pages.firstPageObject.BasePage;
-import firstSuites.pages.firstPageObject.GoogleResultPage;
-import firstSuites.pages.utils.Links;
-import firstSuites.pages.utils.Waiters;
+import firstSuites.pages.BasePage;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
-import java.awt.*;
-import java.util.concurrent.TimeUnit;
-
 public class LogoElement extends BasePage {
 
-    protected WebDriver driver;
+
 
     public LogoElement(WebDriver driver) {
         super(driver);

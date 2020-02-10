@@ -1,6 +1,5 @@
-package firstSuites.pages.firstPageObject;
+package firstSuites.pages;
 
-import firstSuites.pages.indexPage.LogoElement;
 import firstSuites.pages.utils.Links;
 import firstSuites.pages.utils.Waiters;
 import org.openqa.selenium.WebDriver;
