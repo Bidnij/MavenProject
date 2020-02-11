@@ -12,8 +12,7 @@ import java.util.concurrent.TimeUnit;
 public class GoogleSearchPage extends BasePage {
 
 
-
-     @FindBy(name = "q")
+    @FindBy(name = "q")
     private WebElement searchField;
 
     public GoogleSearchPage(WebDriver driver) {

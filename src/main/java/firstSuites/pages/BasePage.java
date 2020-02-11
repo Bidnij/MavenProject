@@ -15,6 +15,8 @@ public class BasePage { // клас отвечаюзий за драйвер
         PageFactory.initElements(driver, this);
     }
 
+
+
     public BasePage openPage(String pageUrl) {
         driver.get(Links.BASIC_URL + pageUrl);
         Waiters.implicitWait(driver, Waiters.TIME_TEN, TimeUnit.SECONDS);

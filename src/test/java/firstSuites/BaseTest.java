@@ -20,7 +20,7 @@ public class BaseTest {
         System.setProperty("webdriver.gecko.driver", "src/test/resources/drivers/geckodriver");
         System.setProperty("webdriver.safari.driver", "src/test/resources/drivers/safaridriver");
 
-        driver = BrowserFactory.getDriver("CHROME");
+        driver = BrowserFactory.getDriver(BrowserFactory.CHROME);
         //driver = new ChromeDriver(); // Тут поменять на Веб драйвер фектори сюда передать driverfactory get
         driver.manage().window().maximize();
         Waiters.implicitWait(driver, Waiters.TIME_TEN, TimeUnit.SECONDS);
