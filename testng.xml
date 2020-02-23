@@ -2,6 +2,19 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="All Test Suite">
     <test verbose="2" preserve-order="true" name="/Users/mihail/IdeaProjects/MavenProject/target">
-        <classes/>
+
+    </test>
+    <test name="Nopackage">
+        <classes>
+            <class name="firstSuites.indexPageTest.TestsOnLogo"/>
+        </classes>
+    </test>
+
+    <test name="Regression1">
+        <classes>
+            <class name="firstSuites.indexPageTest.TestsOnLogo"/>
+            <class name="firstSuites.indexPageTest.TestsOnLogo"/>
+        </classes>
     </test>
 </suite>
+
