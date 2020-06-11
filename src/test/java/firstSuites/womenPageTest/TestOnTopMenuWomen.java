@@ -1,5 +1,4 @@
 package firstSuites.womenPageTest;
-
 import firstSuites.BaseTest;
 import firstSuites.pages.BasePage;
 import firstSuites.pages.indexPage.TopMenu;
